@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlatformControl : MonoBehaviour
 {
-    private PlayerController player;
+    private Player player;
 
     Collider2D platformCollider;
     public bool platformInPortal; //check if the platform is intended for inside or outside of the portal
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         platformCollider = GetComponent<Collider2D>();
     }

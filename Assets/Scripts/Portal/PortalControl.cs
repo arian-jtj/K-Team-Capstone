@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PortalMask : MonoBehaviour
 {
-    public PlayerController player;
+    public Player player;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Player is inside the portal when the player's collider enters the portal's collider
