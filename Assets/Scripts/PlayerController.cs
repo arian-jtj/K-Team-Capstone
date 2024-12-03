@@ -19,10 +19,14 @@ public class PlayerController : MonoBehaviour
 
     public bool isInPortal = false; //check if the player is inside the portal
 
+    public VectorValue startingPosition; //spawn point position, used for when changing scenes
+
     void Start()
     {
         extraJump = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
+
+        transform.position = startingPosition.initialValue;
     }
 
     void FixedUpdate()

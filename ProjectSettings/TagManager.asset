@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CheckTrash
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: CheckTrash
+    uniqueID: 777158205
+    locked: 0
+  - name: Trash
+    uniqueID: 108702671
+    locked: 0
+  - name: Backgrounds
+    uniqueID: 571035823
+    locked: 0
+  - name: Terrains
+    uniqueID: 1390122331
+    locked: 0
+  - name: Player
+    uniqueID: 1023841963
     locked: 0
