@@ -54,10 +54,12 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             extraJump--;
+            animator.SetBool("IsJumping", true);
         }
         else if (Input.GetButtonDown("Jump") && extraJump == 0 && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            animator.SetBool("IsJumping", true);
         }
 
         // Reduce Jump
@@ -96,6 +98,13 @@ public class Player : MonoBehaviour
         }
 
         rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+
+        animator.SetBool("IsGrounded", isGrounded());
+        animator.SetBool("IsFalling", rb.velocity.y < 0f && !isGrounded());
+        if (isGrounded())
+        {
+            animator.SetBool("IsJumping", false);
+        }
     }
 
     private bool isGrounded()
