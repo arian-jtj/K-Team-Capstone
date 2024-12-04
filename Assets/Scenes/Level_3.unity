@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.5
 --- !u!1 &81467096
 GameObject:
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.3
 --- !u!212 &84000598
 SpriteRenderer:
@@ -408,6 +408,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!1001 &185269796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3796831033965610871, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_Name
+      value: Bounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 147.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 64.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838626463531825293, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 040da2819b60e444fb8a7fd7b22aefb9, type: 3}
 --- !u!1 &273932470
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 1
 --- !u!212 &273932473
 SpriteRenderer:
@@ -775,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.3
 --- !u!1 &641971550
 GameObject:
@@ -993,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.7
 --- !u!212 &709392893
 SpriteRenderer:
@@ -1734,7 +1795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0
 --- !u!1 &1150328564
 GameObject:
@@ -1917,7 +1978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: -0.3
 --- !u!1 &1294702098
 GameObject:
@@ -2036,6 +2097,72 @@ Transform:
   - {fileID: 1912537155}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1396861816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1805211454278180795, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_Name
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603980777991694264, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684635638766107013, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1633858447}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+--- !u!1 &1396861817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1805211454278180795, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+  m_PrefabInstance: {fileID: 1396861816}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1511431770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 1
 --- !u!1 &1514024861
 GameObject:
@@ -2236,7 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.7
 --- !u!1 &1551689847
 GameObject:
@@ -2634,6 +2761,11 @@ PrefabInstance:
 --- !u!1 &1633858441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8076321441697815196, guid: 715f72089f0a5a74394550239db74c3c, type: 3}
+  m_PrefabInstance: {fileID: 1633858440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1633858447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1619497385723540042, guid: 715f72089f0a5a74394550239db74c3c, type: 3}
   m_PrefabInstance: {fileID: 1633858440}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735611494
@@ -3088,7 +3220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716bcc1853351a64da741d220b2f4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1633858441}
+  mainCamera: {fileID: 1396861817}
   parallaxEffectAmount: 0.5
 --- !u!212 &1862309365
 SpriteRenderer:
@@ -3279,8 +3411,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1396861816}
   - {fileID: 1633858440}
   - {fileID: 641971551}
   - {fileID: 1325140469}
   - {fileID: 462085469}
   - {fileID: 1998945369}
+  - {fileID: 185269796}
