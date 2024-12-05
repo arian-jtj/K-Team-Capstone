@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "K-Capstone.sln"
+    "dotnet.defaultSolution": "K-Team-Capstone.sln"
 }
