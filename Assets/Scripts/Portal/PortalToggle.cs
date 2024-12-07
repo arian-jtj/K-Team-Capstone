@@ -10,11 +10,17 @@ public class PortalToggle : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             portal.transform.position = player.transform.position;
             portalIsActive = !portalIsActive;
             portal.SetActive(portalIsActive);
         }
+    }
+
+    public void ClosePortal()
+    {
+        portalIsActive = false;
+        portal.SetActive(false);
     }
 }
