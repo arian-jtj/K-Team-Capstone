@@ -914,10 +914,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1325140469}
     m_Modifications:
+    - target: {fileID: 415662952786764764, guid: cc673241a28bb6c409af6594042e7873, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1396861817}
     - target: {fileID: 1429107630035399969, guid: cc673241a28bb6c409af6594042e7873, type: 3}
       propertyPath: m_Name
       value: AltForest
       objectReference: {fileID: 0}
+    - target: {fileID: 4611679001795667444, guid: cc673241a28bb6c409af6594042e7873, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1396861817}
+    - target: {fileID: 4977127521402444039, guid: cc673241a28bb6c409af6594042e7873, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1396861817}
     - target: {fileID: 6866679138734958584, guid: cc673241a28bb6c409af6594042e7873, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -962,6 +974,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7588984712261103689, guid: cc673241a28bb6c409af6594042e7873, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1396861817}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

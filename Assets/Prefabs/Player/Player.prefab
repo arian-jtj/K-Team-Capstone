@@ -379,8 +379,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.045644965, y: -2.220247}
-  m_Size: {x: 7.509594, y: 13.85527}
+  m_Offset: {x: -0.04564686, y: -2.2620504}
+  m_Size: {x: 5.045506, y: 13.042849}
   m_Direction: 0
 --- !u!114 &5291488004767787586
 MonoBehaviour:
@@ -407,6 +407,7 @@ MonoBehaviour:
   spriteTransform: {fileID: 6964763711738308867}
   hair: {fileID: 6985730480288321714}
   animator: {fileID: 3727156718441552117}
+  startingPosition: {fileID: 0}
   isInPortal: 0
   checkRadius: 0.3
 --- !u!95 &3727156718441552117
