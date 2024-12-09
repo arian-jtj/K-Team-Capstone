@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnimation: {fileID: 1808749547}
   transitionSceneTo: Level_3
-  playerPosition: {x: -5.4, y: -1}
+  playerSpawnPosition: {x: -5.34, y: -1.73}
   playerStorage: {fileID: 11400000, guid: 4e03d6324f14a974685df271649fb2a7, type: 2}
 --- !u!4 &1165679723
 Transform:
