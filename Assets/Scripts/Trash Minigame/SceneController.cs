@@ -8,24 +8,12 @@ public class SceneController : MonoBehaviour
     [SerializeField] Animator transitionAnimation;
     public string transitionSceneTo;
 
-    public Vector2 playerPosition;
+    public Vector2 playerSpawnPosition;
     public PlayerVectorValue playerStorage;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ChangeScene()
     {
-        playerStorage.changingValue = playerPosition;
+        playerStorage.changingValue = playerSpawnPosition;
         StartCoroutine(LoadScene());
     }
 

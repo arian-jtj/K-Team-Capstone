@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteTransform;
     [SerializeField] private Hair hair;
     [SerializeField] private Animator animator;
-    public PlayerVectorValue startingPosition; //spawn point position, used for when changing scenes
+    public PlayerVectorValue spawnPosition; //spawn point position, used for when changing scenes or respawning
 
     [Header("Portal")]
     public bool isInPortal = false;
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         extraJump = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = 0f;
-        transform.position = startingPosition.changingValue;
+        transform.position = spawnPosition.changingValue;
     }
 
     private void Update()
