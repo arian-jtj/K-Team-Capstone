@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 105304673}
   - component: {fileID: 105304674}
   m_Layer: 6
-  m_Name: Collision (1)
+  m_Name: Extra (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,6 +762,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1633858447}
+    - target: {fileID: 4615501736228393913, guid: 73b64df9be399704495c8950f039db9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1240,8 +1244,8 @@ GameObject:
   - component: {fileID: 1768313589}
   - component: {fileID: 1768313591}
   - component: {fileID: 1768313590}
-  m_Layer: 0
-  m_Name: Extra
+  m_Layer: 6
+  m_Name: Extra (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1368,7 +1372,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d32b467e2a5b5b048871bcc898094c28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
