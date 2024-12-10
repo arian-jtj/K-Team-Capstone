@@ -407,7 +407,7 @@ MonoBehaviour:
   spriteTransform: {fileID: 6964763711738308867}
   hair: {fileID: 6985730480288321714}
   animator: {fileID: 3727156718441552117}
-  startingPosition: {fileID: 0}
+  spawnPosition: {fileID: 0}
   isInPortal: 0
   checkRadius: 0.3
 --- !u!95 &3727156718441552117
@@ -456,7 +456,7 @@ Transform:
   m_GameObject: {fileID: 8076741878126793480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9.6, z: 0}
+  m_LocalPosition: {x: 0, y: -9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
