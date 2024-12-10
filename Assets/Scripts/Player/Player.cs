@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDataPersistance
 {
+    [Header("PlayerData")]
+    public int clearedLevel;
+    public int currentLevel;
+
     [Header("Player Settings")]
     public float speed;
     public float runSpeed;
@@ -32,6 +36,10 @@ public class Player : MonoBehaviour
     [Header("Ground Check")]
     public float checkRadius;
 
+
+
+
+
     private void Start()
     {
         extraJump = extraJumpValue;
@@ -45,6 +53,15 @@ public class Player : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         UpdateAnimation();
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            clearedLevel += 2;
+            currentLevel += 1;
+            Debug.Log(clearedLevel);
+            Debug.Log(currentLevel);
+            Debug.Log(Application.persistentDataPath);
+        }
 
         // Jump
         if (isGrounded())
@@ -134,4 +151,18 @@ public class Player : MonoBehaviour
         bool isRunning = Input.GetKey(KeyCode.LeftShift) && absoluteSpeed > 0.1f;
         animator.SetBool("IsRunning", isRunning);
     }
+
+    public void LoadData(GameData data)
+    {
+        this.clearedLevel = data.clearedLevel;
+        this.currentLevel = data.currentLevel;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.clearedLevel = this.clearedLevel;
+        data.currentLevel = this.currentLevel;
+    }
+
+    
 }

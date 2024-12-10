@@ -22,7 +22,7 @@ public class CheckTrash : MonoBehaviour
         if(trashRemovedCounter == totalTrashAmount)
         {
             sceneControllerScript.ChangeScene();
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
