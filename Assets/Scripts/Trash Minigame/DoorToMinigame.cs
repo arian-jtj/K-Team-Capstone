@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DoorToMinigame : MonoBehaviour
 {
+    //Check if its cleared
+    private bool isCleared = false;
+
     private bool isInFrontOfDoor;
 
     [SerializeField] private GameObject SceneManager;
@@ -18,6 +21,10 @@ public class DoorToMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isCleared)
+        {
+            gameObject.SetActive(false);
+        }
         if(Input.GetKeyDown(KeyCode.F) && isInFrontOfDoor)
         {
             sceneControllerScript.ChangeScene();
