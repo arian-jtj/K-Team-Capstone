@@ -50,6 +50,9 @@ public class Player : MonoBehaviour
         if (isGrounded())
         {
             extraJump = extraJumpValue;
+
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", false);
         }
 
         if (Input.GetButtonDown("Jump") && extraJump > 0)
@@ -57,11 +60,13 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             extraJump--;
             animator.SetBool("IsJumping", true);
+            animator.SetBool("IsFalling", false);
         }
         else if (Input.GetButtonDown("Jump") && extraJump == 0 && isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animator.SetBool("IsJumping", true);
+            animator.SetBool("IsFalling", false);
         }
 
         // Reduce Jump
@@ -101,11 +106,17 @@ public class Player : MonoBehaviour
 
         rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
 
-        animator.SetBool("IsGrounded", isGrounded());
-        animator.SetBool("IsFalling", rb.velocity.y < 0f && !isGrounded());
-        if (isGrounded())
+        bool grounded = isGrounded();
+        animator.SetBool("IsGrounded", grounded);
+
+        if (grounded)
         {
             animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", false);
+        }
+        else
+        {
+            animator.SetBool("IsFalling", rb.velocity.y < 0f && !grounded);
         }
     }
 
