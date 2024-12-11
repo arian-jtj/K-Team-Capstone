@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Player Position
   m_EditorClassIdentifier: 
   valueOnReset: {x: 0, y: -1.2}
-  changingValue: {x: 0, y: 0}
+  changingValue: {x: 0, y: -1.2}
