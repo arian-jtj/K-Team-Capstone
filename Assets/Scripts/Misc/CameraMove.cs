@@ -12,9 +12,14 @@ public class CameraMove : MonoBehaviour
 
     private void Awake() => _mainCamera = Camera.main;
 
+    private Camera ortographicCamera;
+    public float zoomOutSize;
+    private float zoomInSize = 5.09f;
+
     private void Start()
     {
         CalculateCameraBounds();
+        ortographicCamera = GetComponent<Camera>();
     }
 
     private void LateUpdate()
@@ -62,5 +67,15 @@ public class CameraMove : MonoBehaviour
             Mathf.Clamp(_targetPosition.y, _cameraBounds.min.y, _cameraBounds.max.y),
             transform.position.z
         );
+    }
+
+    public void ZoomOut()
+    {
+        ortographicCamera.orthographicSize = zoomOutSize;
+    }
+
+    public void ZoomIn()
+    {
+        ortographicCamera.orthographicSize = zoomInSize;
     }
 }
