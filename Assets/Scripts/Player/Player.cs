@@ -148,7 +148,7 @@ public class Player : MonoBehaviour, IDataPersistance
                     SoundManager.instance.PlaySound(jumpSound);
                     Debug.Log("JUMPSOUND");
                 }
-
+                Debug.Log("TES");
 
             }
         }
