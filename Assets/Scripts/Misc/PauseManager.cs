@@ -8,7 +8,6 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject musicOnButton;
     [SerializeField] private GameObject musicOffButton;
-    [SerializeField] private SceneController MainMenuScene;
 
     public void OpenPauseMenu()
     {
