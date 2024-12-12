@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c6e3d1c96e5c81f418a59cf64148118e
+  - enabled: 1
     path: Assets/Scenes/Level_1.unity
     guid: 09f080c68027c4440888b1dbf80148c8
   - enabled: 1
@@ -17,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrashMinigame.unity
     guid: 6c6f92c17dd42974894696b1a646651b
+  - enabled: 1
+    path: Assets/Scenes/Level_4.unity
+    guid: 5ef2fcc4c9952a644848d3e177a477fe
+  - enabled: 1
+    path: Assets/Scenes/Level_5.unity
+    guid: cf887ec5c230d744d9085f453a38f06b
   m_configObjects: {}
