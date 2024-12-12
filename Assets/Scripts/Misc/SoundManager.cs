@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance {  get; private set; }
     private AudioSource sound;
+    private bool isMuted = false;
 
     private AudioClip currentSound;
     // Start is called before the first frame update
@@ -18,6 +19,8 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     public void PlaySound(AudioClip _sound)
     {
+        if (isMuted)
+            return;
         if (sound.isPlaying && _sound == sound.clip)
             return;
 
@@ -33,4 +36,15 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void ToggleMute()
+    {
+        Debug.Log("KEpanggil");
+        isMuted = !isMuted;
+        sound.mute = isMuted;
+    }
+
+    public bool IsMuted()
+    {
+        return isMuted;
+    }
 }

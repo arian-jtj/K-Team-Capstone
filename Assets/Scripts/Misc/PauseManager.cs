@@ -11,9 +11,14 @@ public class PauseManager : MonoBehaviour
 
     public void OpenPauseMenu()
     {
-        Debug.Log("Bisa");
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0;
+        if (pauseMenu.activeInHierarchy)
+            ResumeButton();
+        else
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+
+        }
     }
 
     public void ResumeButton()
@@ -34,6 +39,7 @@ public class PauseManager : MonoBehaviour
         musicOnButton.SetActive(false);
         musicOffButton.SetActive(true);
         Debug.Log("TURNOFF");
+
     }
 
     public void GoToMainMenuButton()

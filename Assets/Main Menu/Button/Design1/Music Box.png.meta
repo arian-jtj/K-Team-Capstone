@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2d05083916482bf468c71b6b3265ff1a
+guid: 2208aacc4369e0a408b6fd9e0aac1c76
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Music Box_0
+      name: Music Box (1)_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 753
+        width: 574
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a463578f172c5048b2a8f6f864022cd
+      internalID: 1767382887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music Box (1)_5
       rect:
         serializedVersion: 2
         x: 1395
@@ -111,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37adc933f4ae87540b1c7d12964ce5ff
-      internalID: -2056945535
+      spriteID: b275f8d8b80a0bb41907a1c10b1103f1
+      internalID: -1437750607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Music Box_1
+      name: Music Box (1)_6
       rect:
         serializedVersion: 2
         x: 1631
@@ -132,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c6d1d3df208ffb4395e67315a10afc0
-      internalID: -137685501
+      spriteID: 93724be0d43ef5143acc7ad4b94567f4
+      internalID: -1285728332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Music Box_2
+      name: Music Box (1)_7
       rect:
         serializedVersion: 2
         x: 1395
@@ -153,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8312dba17b2ca9b44ad7abc6e0fc2a33
-      internalID: 361679445
+      spriteID: 0fac41cf99efb5540844f3591353e2b8
+      internalID: 1223687200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Music Box_3
+      name: Music Box (1)_8
       rect:
         serializedVersion: 2
         x: 1807
@@ -174,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1650aacac578ed438f7c503e3134cf7
-      internalID: 1561675959
+      spriteID: 5adf90bea30aa8d4da72f593511130c8
+      internalID: -592594785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Music Box_4
+      name: Music Box (1)_9
       rect:
         serializedVersion: 2
         x: 455
@@ -195,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 438365597d234d24c99e2423cfe7424a
-      internalID: 907066675
+      spriteID: ab6f13ddce8994b429771f769a0812f7
+      internalID: -959248083
       vertices: []
       indices: 
       edges: []
@@ -212,11 +233,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Music Box_0: -2056945535
-      Music Box_1: -137685501
-      Music Box_2: 361679445
-      Music Box_3: 1561675959
-      Music Box_4: 907066675
+      Music Box (1)_0: 1767382887
+      Music Box (1)_1: -1855147171
+      Music Box (1)_2: -335142531
+      Music Box (1)_3: 1489357107
+      Music Box (1)_4: 749694557
+      Music Box (1)_5: -1437750607
+      Music Box (1)_6: -1285728332
+      Music Box (1)_7: 1223687200
+      Music Box (1)_8: -592594785
+      Music Box (1)_9: -959248083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
