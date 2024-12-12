@@ -36,8 +36,11 @@ public class Player : MonoBehaviour, IDataPersistance
     [Header("Ground Check")]
     public float checkRadius;
 
-
-
+    [Header("Audio Controller")]
+    [SerializeField] private AudioClip walkingSound;
+    [SerializeField] private AudioClip runningSound;
+    [SerializeField] private AudioClip jumpSound;
+    private bool isJumpSound;
 
 
     private void Start()
@@ -71,6 +74,14 @@ public class Player : MonoBehaviour, IDataPersistance
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
         }
+
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    if (isJumpSound)
+        //        return;
+        //    isJumpSound = true;
+        //    SoundManager.instance.PlaySound(jumpSound);
+        //}
 
         if (Input.GetButtonDown("Jump") && extraJump > 0)
         {
@@ -108,6 +119,7 @@ public class Player : MonoBehaviour, IDataPersistance
                 currentSpeed += acceleration * Time.fixedDeltaTime;
                 if (currentSpeed > targetSpeed)
                     currentSpeed = targetSpeed;
+
             }
             else if (currentSpeed > targetSpeed)
             {
@@ -119,6 +131,26 @@ public class Player : MonoBehaviour, IDataPersistance
         else
         {
             currentSpeed = targetSpeed;
+
+            if (horizontal == 0)
+            {
+                SoundManager.instance.StopSound();
+            }
+            else
+            {
+                if (isGrounded())
+                {
+
+                SoundManager.instance.PlaySound(isRunning ?runningSound : walkingSound);
+                }
+                else
+                {
+                    SoundManager.instance.PlaySound(jumpSound);
+                    Debug.Log("JUMPSOUND");
+                }
+
+
+            }
         }
 
         rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
@@ -130,6 +162,7 @@ public class Player : MonoBehaviour, IDataPersistance
         {
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
+            isJumpSound = false;
         }
         else
         {

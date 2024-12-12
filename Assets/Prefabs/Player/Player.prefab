@@ -394,6 +394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a17e290cfb5e84680b4e38af3f0e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clearedLevel: 0
+  currentLevel: 0
   speed: 5
   runSpeed: 10
   acceleration: 50
@@ -410,6 +412,9 @@ MonoBehaviour:
   spawnPosition: {fileID: 0}
   isInPortal: 0
   checkRadius: 0.3
+  walkingSound: {fileID: 8300000, guid: 1860af77f6ced8442bc51e773c32be52, type: 3}
+  runningSound: {fileID: 8300000, guid: 22abb23c342480c46baedb92795f3143, type: 3}
+  jumpSound: {fileID: 8300000, guid: b61b83f0f4734f544a39b6b0c69e4319, type: 3}
 --- !u!95 &3727156718441552117
 Animator:
   serializedVersion: 5
