@@ -1,32 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DoorToMinigame : MonoBehaviour
 {
-    //Check if its cleared
-    private bool isCleared = false;
-
     private bool isInFrontOfDoor;
 
     [SerializeField] private GameObject SceneManager;
     private SceneController sceneControllerScript;
 
-    // Start is called before the first frame update
+    [SerializeField] private DoorActiveStatus doorStatus;
+    private SpriteRenderer _sprite;
+    private Collider2D _collider;
+
     void Start()
     {
         sceneControllerScript = SceneManager.GetComponent<SceneController>();
+
+        _sprite = gameObject.GetComponent<SpriteRenderer>();
+        _collider = gameObject.GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (isCleared)
+        if(doorStatus.isDoorCurrentlyActive == true)
         {
-            gameObject.SetActive(false);
+            _sprite.enabled = true;
+            _collider.enabled = true;
         }
+        else
+        {
+            _sprite.enabled = false;
+            _collider.enabled = false;
+        }
+
         if(Input.GetKeyDown(KeyCode.F) && isInFrontOfDoor)
         {
+            doorStatus.isDoorCurrentlyActive = false;
+            DontDestroyOnLoad(this.gameObject);
             sceneControllerScript.ChangeScene();
         }
     }
