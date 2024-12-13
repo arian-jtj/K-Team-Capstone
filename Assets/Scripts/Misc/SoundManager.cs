@@ -22,8 +22,9 @@ public class SoundManager : MonoBehaviour
         if (isMuted)
             return;
         if (sound.isPlaying && _sound == sound.clip)
+        {
             return;
-
+        }
         sound.clip = _sound;
         sound.Play();
     }
@@ -38,7 +39,7 @@ public class SoundManager : MonoBehaviour
 
     public void ToggleMute()
     {
-        Debug.Log("KEpanggil");
+        Debug.Log("ISMUTED");
         isMuted = !isMuted;
         sound.mute = isMuted;
     }

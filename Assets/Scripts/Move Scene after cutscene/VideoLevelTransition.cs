@@ -6,7 +6,10 @@ using UnityEngine.Video;
 
 public class VideoLevelTransition : MonoBehaviour
 {
+    [SerializeField] Animator transitionAnimation;
+    public string transitionSceneTo;
     private VideoPlayer videoPlayer;
+    private bool isPause = false;
 
     private void Start()
     {
@@ -20,8 +23,28 @@ public class VideoLevelTransition : MonoBehaviour
 
     private void OnVideoFinished(VideoPlayer vp)
     {
-        SceneManager.LoadScene("Level_2");
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        transitionAnimation.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(transitionSceneTo);
+        transitionAnimation.SetTrigger("Start");
     }
     // Start is called before the first frame update
-
+    public void TogglePause()
+    {
+        if (videoPlayer.isPlaying)
+        {
+            videoPlayer.Pause();
+            isPause = true;
+        }
+        else
+        {
+            videoPlayer.Play();
+            isPause = false;
+        }
+    }
 }
