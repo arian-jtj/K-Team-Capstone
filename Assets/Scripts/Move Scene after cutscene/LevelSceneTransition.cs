@@ -9,9 +9,13 @@ public class LevelSceneTransition : MonoBehaviour
     [SerializeField] Animator transitionAnimation;
     public string transitionSceneTo;
 
+    public Vector2 playerSpawnPosition;
+    public PlayerVectorValue playerStorage;
+
     // Start is called before the first frame update
     public void ChangeLevel()
     {
+        playerStorage.changingValue = playerSpawnPosition;
         StartCoroutine(LoadScene());
     }
 
