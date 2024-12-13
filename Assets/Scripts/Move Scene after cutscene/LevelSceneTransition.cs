@@ -10,9 +10,9 @@ public class LevelSceneTransition : MonoBehaviour
     public string transitionSceneTo;
 
     // Start is called before the first frame update
-    void Start()
+    public void ChangeLevel()
     {
-        
+        StartCoroutine(LoadScene());
     }
 
     // Update is called once per frame
