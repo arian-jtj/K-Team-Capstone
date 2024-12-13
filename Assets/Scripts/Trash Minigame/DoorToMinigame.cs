@@ -37,8 +37,8 @@ public class DoorToMinigame : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.F) && isInFrontOfDoor)
         {
-            doorStatus.isDoorCurrentlyActive = false;
             DontDestroyOnLoad(this.gameObject);
+            doorStatus.isDoorCurrentlyActive = false;
             sceneControllerScript.ChangeScene();
         }
     }
