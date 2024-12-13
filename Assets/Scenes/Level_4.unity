@@ -6381,6 +6381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnimation: {fileID: 540103305}
   transitionSceneTo: Level_5
+  playerSpawnPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 11400000, guid: 4e03d6324f14a974685df271649fb2a7, type: 2}
 --- !u!1001 &1998945369
 PrefabInstance:
   m_ObjectHideFlags: 0
