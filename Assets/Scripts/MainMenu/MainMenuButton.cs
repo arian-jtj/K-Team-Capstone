@@ -8,6 +8,11 @@ public class MainMenuButton : MonoBehaviour
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject CreditImage;
 
+    [Header("Options")]
+    [SerializeField] private GameObject OptionMenu;
+    [SerializeField] private GameObject MusicOnButton;
+    [SerializeField] private GameObject MusicOffButton;
+
     public void PlayButton()
     {
         mainMenuButton.SetActive(false);
@@ -16,7 +21,23 @@ public class MainMenuButton : MonoBehaviour
 
     public void OptionButton()
     {
+        OptionMenu.SetActive(true);
+    }
 
+    public void CloseOptionButton()
+    {
+        OptionMenu.SetActive(false);
+    }
+
+    public void TurnOnMusic()
+    {
+        MusicOffButton.SetActive(false);
+        MusicOnButton.SetActive(true);
+    }
+    public void TurnOffMusic()
+    {
+        MusicOnButton.SetActive(false);
+        MusicOffButton.SetActive(true);
     }
 
     public void CreditButton()

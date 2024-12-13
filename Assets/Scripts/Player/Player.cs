@@ -134,7 +134,14 @@ public class Player : MonoBehaviour, IDataPersistance
 
             if (horizontal == 0)
             {
+                if (isGrounded())
+                {
                 SoundManager.instance.StopSound();
+                }
+                else
+                {
+                    SoundManager.instance.PlaySound(jumpSound);
+                }
             }
             else
             {
