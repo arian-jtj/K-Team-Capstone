@@ -6,13 +6,13 @@ using UnityEngine;
 public class GameData
 {
     public int clearedLevel;
-    public int currentLevel;
-    public Vector2 Vector2;
+    public string currentLevel;
+    public Vector2 playerCurrentPosition;
 
     public GameData()
     {
         clearedLevel = 0;
-        currentLevel = 1;
-        this.Vector2 = new Vector2();
+        currentLevel = "";
+        this.playerCurrentPosition = Vector2.zero;
     }
 }

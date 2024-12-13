@@ -7,7 +7,7 @@ public class Player : MonoBehaviour, IDataPersistance
 {
     [Header("PlayerData")]
     public int clearedLevel;
-    public int currentLevel;
+    public string currentLevel;
 
     [Header("Player Settings")]
     public float speed;
@@ -28,7 +28,9 @@ public class Player : MonoBehaviour, IDataPersistance
     [SerializeField] private SpriteRenderer spriteTransform;
     [SerializeField] private Hair hair;
     [SerializeField] private Animator animator;
-    public PlayerVectorValue spawnPosition; //spawn point position, used for when changing scenes or respawning
+    public PlayerVectorValue spawnPosition;
+    private Vector2 savePosition;
+    //spawn point position, used for when changing scenes or respawning
 
     [Header("Portal")]
     public bool isInPortal = false;
@@ -59,11 +61,9 @@ public class Player : MonoBehaviour, IDataPersistance
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            clearedLevel += 2;
-            currentLevel += 1;
+            savePosition = new Vector2(transform.position.x, transform.position.y);
             Debug.Log(clearedLevel);
             Debug.Log(currentLevel);
-            Debug.Log(Application.persistentDataPath);
         }
 
         // Jump
@@ -153,9 +153,7 @@ public class Player : MonoBehaviour, IDataPersistance
                 else
                 {
                     SoundManager.instance.PlaySound(jumpSound);
-                    Debug.Log("JUMPSOUND");
                 }
-                Debug.Log("TES");
 
             }
         }
@@ -205,12 +203,14 @@ public class Player : MonoBehaviour, IDataPersistance
 
     public void LoadData(GameData data)
     {
+        this.savePosition = data.playerCurrentPosition;
         this.clearedLevel = data.clearedLevel;
         this.currentLevel = data.currentLevel;
     }
 
     public void SaveData(ref GameData data)
     {
+        data.playerCurrentPosition = this.transform.position;
         data.clearedLevel = this.clearedLevel;
         data.currentLevel = this.currentLevel;
     }
